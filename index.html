@@ -31,7 +31,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <!-- Pixel Code for https://www.widgetsquad.com/ -->
+  <script async src="https://www.widgetsquad.com/pixel/kse0uaj3zovrrgeqt7uox60ma5f8vm83"></script>
+  <!-- END Pixel Code -->
 </head>
 
 <body>
@@ -582,6 +584,8 @@
       </p>
     </div>
   </section>
+
+
   <!-- footer section -->
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -598,7 +602,42 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
+  <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?2304';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#474bc2",
+        "ctaText":"",
+        "borderRadius":"30",
+        "marginLeft":"0",
+        "marginBottom":"40",
+        "marginRight":"40",
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Bersch Security Service",
+        "brandSubTitle":"Typically replies within a day",
+        "brandImg":"https://xamarin-test.000webhostapp.com/images/favicon2.png",
+        "welcomeText":"Hi there! Welcome to Bersch\nHow can I help you?",
+        "messageText":"Hi there! Welcome to Bersch%0AHow can I help you?",
+        "backgroundColor":"#0a5f54",
+        "ctaText":"Message us",
+        "borderRadius":"30",
+        "autoShow":false,
+        "phoneNumber":"27748248292"
+    }
+  };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
 </body>
 
 </html>
